@@ -1,3 +1,4 @@
+
 <?php
     $a = (isset($_GET['a'])) ? $_GET['a'] : 1; 
     
@@ -13,9 +14,6 @@
             break;
         case 4:
             include ("pages/pChiTietSanPham.php");
-            break;
-		case 5:
-            include ("pages/Psreach.php");
             break;
         case 6:
             include ("pages/pQuanLyGioHang.php");
@@ -35,6 +33,9 @@
 		case 14:
             include ("modules/mTrangDangKy.php");
             break;
+		case 15:
+			include ("pages/pSearch.php");
+			break;
         default:
             include "pages/pError.php";
             break;
