@@ -1,0 +1,265 @@
+/* CSS Document */
+
+body{
+	font-family: tahoma, helvetica, arial, sans-serif; 	/* font chữ */
+	font-size: 10px; 									/* cở chữ */
+	background:url(../img/page_bg.gif);					/* ảnh nền của toàn website */
+	margin:0px;
+	padding:0px;
+}
+
+#wrapper{
+	margin:auto;		/* sét khoản cách lề tự động để canh giữa trang */
+	text-align:left;
+	width:1000px;		/* canh chiều ngang của nội dung trang web */
+	border-left: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+	margin-bottom: 10px;
+	background: #FFF;
+	color: #000;
+}
+
+#sidebar{
+	width: 195px;
+	margin: 0px;
+	padding: 0px;
+	background:#FFF;
+	border-bottom: 2px solid #FFF;
+	float:left;
+	margin-bottom:10px;
+}
+
+#content{
+	width: 800px;
+	margin: 2px 1px 10px 0px;
+	border: 2px solid #E5E5E5;
+	float:right;
+	min-height:50px;
+}
+
+#footer{
+	clear:both;
+	background:#C80000 url(../img/footer_bg.gif) repeat-x;
+	padding: 8px 8px 5px 8px;
+	text-align:center;
+	border-bottom: 2px solid #FFF;
+	font-weight:bold;
+	color:#FFF;
+}
+
+#login_nav{
+	color:#FFF;
+	font-weight:bold;
+	text-decoration:none;
+	position:absolute;			/* set vị trí tuyệt đối cho khung login_nav */
+	width:520px;
+	margin-left:295px;
+	margin-top: -40px;			/* điều khiển dịch lên trên so với vị trí hiện tại */
+	text-align:right;
+}
+
+a{
+	text-decoration: none;		/* bỏ gạch chân cho link */
+}
+
+#sidebar dl dt{
+	background-color:#00F;
+	color:#FFF;
+	margin: 2px 2px 1px 2px;
+	padding: 6px 0px;
+	text-align:center;
+	font-weight:bold;
+	font-size:18px;
+}
+
+#sidebar dl{
+	margin:0px;
+	padding: 0px;
+}
+
+#sidebar dl dd{
+	background:#227293;
+	border-bottom:1px solid #659DB4;
+	margin: 0px 2px;
+	padding: 0px;
+	font-size:14px;
+}
+
+#sidebar dl dd a{
+	color:#FFF;
+	font-weight:bold;
+	padding: 3px 22px;
+	display:block;
+}
+
+#sidebar dl dd a:hover{
+	background:#0FF;
+}
+
+#content h2{
+	font: bold 30px arial;
+	color:#03F;
+	padding-left: 20px;
+}
+
+.box{
+	margin:5px;
+	float:left;
+	width:380px;
+	text-align:center;
+}
+
+.box:nth-child(even){					/* định dạng cho các block chẵn */
+	border-top: 5px solid rgb(156, 211, 165);
+	margin-right: 15px;
+}
+
+.box:nth-child(odd){					/* định dạng cho các block lẻ */
+	border-top: 5px solid rgb(119, 184, 219);
+	margin-left: 15px;
+} 
+
+.box img{
+	width: 280px;
+	height: 180px;
+}
+
+.pname{
+	font: bold 14px arial;
+	color:#F39;
+	margin-top:5px;
+}
+
+.pprice{
+	margin-top:10px;
+	font: bold 12px arial;
+	color:#F30;
+	font-size:20px;
+	text-align:right;
+	margin-right:20px;
+}
+
+.action{
+	font: italic bold 10px arial;
+	margin-right:30px;
+	margin-bottom:10px;
+	color:#F96;
+	text-align: right;
+}
+
+#chitietsp
+{
+	padding: 10px 10px 10px 10px;
+	min-height:220px;
+}
+
+#chitietleft
+{
+	float:left;
+	margin-bottom: 10px;
+}
+
+#chitietleft img
+{
+	width: 300px;
+	height: 250px;
+}
+
+#chitietright
+{
+	float:left;
+	width: 400px;
+	margin-left: 10px;
+	margin-bottom:10px;
+}
+
+#mota
+{
+	clear:both;
+	font-style:italic;
+	font-size:12px;
+}
+
+.label
+{
+	width: 100px;
+	text-align:right;
+	font-size:13px;
+	display:inline-block;
+	margin-right:5px;
+}
+
+.data
+{
+	font-size:14px;
+	font-weight:bold;
+	color:#666;
+}
+
+.productname
+{
+	font-size: 18px;
+	font-weight:bold;
+	color:#F69;
+}
+
+.price
+{
+	font-size: 18px;
+	font-weight:bold;
+	color:#F93;
+}
+
+.factory
+{
+	font-size: 16px;
+	font-weight:bold;
+	color:#3C6;
+}
+
+.giohang
+{
+	text-align: center;
+}
+
+#quanlygiohang
+{
+	padding: 5px 5px 5px 5px;
+	text-align:center;
+	font-size:15px;
+}
+
+#quanlygiohang h1
+{
+	color:#F63;
+	font-weight:bold;
+}
+
+#quanlygiohang table
+{
+	border: 1px solid #369;
+	width: 750px;
+	padding: 0;
+	border-spacing:0px;
+	text-align:left;
+}
+
+#quanlygiohang table tr td, #quanlygiohang table tr th
+{
+	border: 1px solid #369;
+	margin: 0;
+	padding: 5px;
+}
+
+#quanlygiohang table tr th
+{
+	text-align:center;
+}
+
+input[type=submit]:hover{
+	background-color:#FF6;
+}
+
+input[type=button]:hover{
+	background-color:#FF6;
+}
