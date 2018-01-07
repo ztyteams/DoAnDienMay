@@ -11,7 +11,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Website Điện máy DT </title>
+<title>Website Điện máy ZtyShop </title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
