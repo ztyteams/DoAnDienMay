@@ -146,12 +146,12 @@ a{
 }
 .searchform{
 	font-weight: bold;
-	color: #006699;
+	color: #fff;
 	width: 100%;
 	border: 1px solid black;
 	float: left;
 	margin:auto;
-	background-color:#33ffff;
+	background-color:#006699;
 }
 #chitietsp
 {
@@ -201,6 +201,16 @@ a{
 	font-size:14px;
 	display:inline-block;
 	margin-right:5px;
+}
+.label2
+{
+	width: 300px;
+	text-align:left;
+	font-size:18px;
+	display:inline-block;
+	margin-right:5px;
+	font-weight: bold;
+	color:#000033;
 }
 .data
 {
