@@ -1,7 +1,7 @@
 <div id="header">
     <a href="index.php">
-        <div style="width:1000px; height:110px; background-color:#0CF">
-        	<h1 style="color:#FC0; padding:30px 0px 0px 20px; font-size:30px; font-style:italic; text-shadow:1px 1px #FF0000"> ĐIỆN MÁY DT </h1>
+        <div style="width:1000px; height:100px; background-color:#00004d;top: 0px;">
+        	<h1 class="myfont" style="color: #33adff; padding:30px 0px 0px 20px; font-size:32px; text-shadow:2px 1px #0033cc"> ĐIỆN MÁY ZTYSHOP </h1>
         </div>
     </a>
     <div id="login_nav">
@@ -17,9 +17,9 @@
         ?>
         
     </div>
-    	<img src="img/banner.png" width="1000px" height="200px">
-        	<div style="float:right; margin-top:5px">
-        			<input type="text" id="searchfor" name="searchtext" size="30" />
-            		<input type="submit" id="searchbtn" value="Search" placeholder="Search" />
-       		</div>
+    <img src="img/banner.png" width="1000px" height="200px">
+	<!-- them thu vien mSearch.php vo -->
+	<?php 
+		include ("modules/mSearch.php");
+	?>
 	</div>
