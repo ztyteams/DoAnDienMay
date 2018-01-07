@@ -1,13 +1,11 @@
 /* CSS Document */
-
 body{
 	font-family: tahoma, helvetica, arial, sans-serif; 	/* font chữ */
-	font-size: 10px; 									/* cở chữ */
+	font-size: 12px; 									/* cở chữ */
 	background:url(../img/page_bg.gif);					/* ảnh nền của toàn website */
 	margin:0px;
 	padding:0px;
 }
-
 #wrapper{
 	margin:auto;		/* sét khoản cách lề tự động để canh giữa trang */
 	text-align:left;
@@ -23,8 +21,8 @@ body{
 	width: 195px;
 	margin: 0px;
 	padding: 0px;
-	background:#FFF;
-	border-bottom: 2px solid #FFF;
+	background:#006699;
+	border-bottom: 2px solid #33cccc;
 	float:left;
 	margin-bottom:10px;
 }
@@ -63,7 +61,7 @@ a{
 }
 
 #sidebar dl dt{
-	background-color:#00F;
+	background-color:#4dd2ff;
 	color:#FFF;
 	margin: 2px 2px 1px 2px;
 	padding: 6px 0px;
@@ -78,7 +76,7 @@ a{
 }
 
 #sidebar dl dd{
-	background:#227293;
+	background:#006699;
 	border-bottom:1px solid #659DB4;
 	margin: 0px 2px;
 	padding: 0px;
@@ -93,7 +91,7 @@ a{
 }
 
 #sidebar dl dd a:hover{
-	background:#0FF;
+	background:#ff99cc;
 }
 
 #content h2{
@@ -146,7 +144,15 @@ a{
 	color:#F96;
 	text-align: right;
 }
-
+.searchform{
+	font-weight: bold;
+	color: #006699;
+	width: 100%;
+	border: 1px solid black;
+	float: left;
+	margin:auto;
+	background-color:#33ffff;
+}
 #chitietsp
 {
 	padding: 10px 10px 10px 10px;
@@ -177,7 +183,7 @@ a{
 {
 	clear:both;
 	font-style:italic;
-	font-size:12px;
+	font-size:14px;
 }
 
 .label
@@ -188,7 +194,14 @@ a{
 	display:inline-block;
 	margin-right:5px;
 }
-
+.label1
+{
+	width: 200px;
+	text-align:right;
+	font-size:14px;
+	display:inline-block;
+	margin-right:5px;
+}
 .data
 {
 	font-size:14px;
@@ -257,9 +270,22 @@ a{
 }
 
 input[type=submit]:hover{
-	background-color:#FF6;
+	background-color: #66e0ff;
 }
 
 input[type=button]:hover{
-	background-color:#FF6;
+	background-color: #66e0ff;
+}
+<!-- them font moi -->
+
+.myfont{
+	font-family: Cherl;
+}
+@font-face {
+font-family: Cherl;
+src:url(‘../fonts/Cherl.ttf’) format(‘truetype’),
+url(‘../fonts/Cherl.eot#iefix’) format(’embedded-opentype’),
+url(‘../fonts/Cherl.woff’) format(‘woff’);
+font-weight:normal;
+font-style:normal;
 }
