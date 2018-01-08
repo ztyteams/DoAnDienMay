@@ -1,6 +1,4 @@
- 
- 
- </div>
+</div>
 			<h1 style="color:#F03;margin:3% 0 0 40%"><i>ĐĂNG KÝ TÀI KHOẢN CHO KHÁCH HÀNG</i></h1></br>
     
 		<div style=" margin:1% 0 5% 40%; background-color:#09F; width:450px; height:520px">    
@@ -91,9 +89,9 @@
                 	<input style="width:52%" type ="text"/>
                     <input style="width:20%" type="submit" value="Kiểm tra"/>
                  <p><b>Mật khẩu</b></p>
-                	<input style="width:52%" type ="text"/>
+                	<input style="width:52%" type ="password"/>
                   <p><b>Xác nhận mật khẩu</b></p>
-                	<input style="width:52%" type ="text" placeholder="Xác nhận mật khẩu của bạn"/>
+                	<input style="width:52%" type ="password" placeholder="Xác nhận mật khẩu của bạn"/>
           <div style="margin:5% 0 0 30%">
                   <input style="width:100px ; height:30px" type="submit" value="Quay lại"/>       	 
                   <input style="width:100px ; height:30px" type="submit" value="Đăng ký"/>
