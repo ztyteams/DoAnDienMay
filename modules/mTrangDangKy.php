@@ -88,16 +88,27 @@
         	<h2 style="color:#F03; padding:5px 0 0 5px">Thông tin tài khoản:</h2>
             <div style="margin:0 0 0 15%; width:100%">
             	<p><b>Tên đăng nhập</b></p>
-                	<input style="width:52%" type ="text"/>
-                    <input style="width:20%" type="submit" value="Kiểm tra"/>
+                <input style="width:52%" type="text" id="txtTenDangNhap"/>  
+                <input style="width:20%" type="button" onclick="KiemTra()" value="Kiểm tra"/>
                  <p><b>Mật khẩu</b></p>
-                	<input style="width:52%" type ="text"/>
+                	<input style="width:52%" id="txtMatKhau" type="password"/>
                   <p><b>Xác nhận mật khẩu</b></p>
-                	<input style="width:52%" type ="text" placeholder="Xác nhận mật khẩu của bạn"/>
+                	<input style="width:52%" type ="password" id="txtXacNhanMK" placeholder="Xác nhận mật khẩu của bạn"/>
           <div style="margin:5% 0 0 30%">
-                  <input style="width:100px ; height:30px" type="submit" value="Quay lại"/>       	 
+                  <a href="./index.php"><input style="width:100px ; height:30px" type="button" value="Quay lại"/></a>     	 
                   <input style="width:100px ; height:30px" type="submit" value="Đăng ký"/>
                   </div>
           </div>
    		</form>
-   </div>
+</div>
+<script type="text/javascript" language="javascript">
+		function KiemTra()
+		{
+			var tenDN = document.getElementById('txtTenDangNhap').value;
+				if(tenDN == "")
+				{
+					document.getElementById('txtTenDangNhap');
+						alert("Tên đăng nhập không được rỗng");
+				}
+		}
+</script>
