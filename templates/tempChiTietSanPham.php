@@ -24,6 +24,10 @@
             <span class="data"><?php echo $soLuongTon; ?> sản phẩm</span>
         </div>
 		<div>
+			<span class="label">Xuất xứ : </span>
+			<span class="data"><?php echo $xuatXu; ?></span>
+		</div>
+		<div>
 			<span class="label">Số lượt xem: </span>
 			<span class="data"><?php echo $soLuocXem; ?></span>
 		</div>

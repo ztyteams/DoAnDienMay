@@ -2,7 +2,7 @@
     if(isset($_GET['id']))
     {
         $maSanPham = $_GET['id'];
-        $sql = "SELECT sanpham.MaSanPham, sanpham.TenSanPham, sanpham.GiaSanPham, sanpham.HinhURL, sanpham.SoLuongTon, loaisanpham.TenLoaiSanPham, hangsanxuat.TenHangSanXuat, sanpham.MoTa,sanpham.SoLuocXem
+        $sql = "SELECT sanpham.MaSanPham,sanpham.XuatXu, sanpham.TenSanPham, sanpham.GiaSanPham, sanpham.HinhURL, sanpham.SoLuongTon, loaisanpham.TenLoaiSanPham, hangsanxuat.TenHangSanXuat, sanpham.MoTa,sanpham.SoLuocXem
                 FROM sanpham, loaisanpham, hangsanxuat
                 WHERE sanpham.BiXoa = FALSE AND sanpham.MaSanPham = $maSanPham AND sanpham.MaLoaiSanPham = loaisanpham.MaLoaiSanPham AND sanpham.MaHangSanXuat = hangsanxuat.MaHangSanXuat;";
         $result = DataProvider::ExecuteQuery($sql);
@@ -16,6 +16,7 @@
             $soLuongTon = $row["SoLuongTon"];
             $moTa = $row["MoTa"];
 			$soLuocXem=$row["SoLuocXem"];
+			$xuatXu=$row["XuatXu"];
             include ("templates/tempChiTietSanPham.php");
         }
     }
