@@ -1,6 +1,13 @@
+<?php
+	include("modules/mSearchAdv.php");
+?>
 <div>
-	<?php $search =$_POST["searchtext"];?> 
-	<span class="label2">Kết quả tìm kiếm từ: "<b style="font-size: 18px;color: #ff1a1a"><?php echo $search; ?></b>" </span>
+	<?php  if(isset($_POST["txtInfo"]))
+				$search =$_POST["txtInfo"];
+			else
+				$search="";
+	?> 
+	<span class="label2">Kết quả tìm kiếm theo tên sản phẩm: "<b style="font-size: 18px;color: #ff1a1a"><?php echo $search; ?></b>" </span>
 </div>	
 <?php
 		if($search=="" or $search==" ")
@@ -11,9 +18,9 @@
 		}
 		else
 		{
-        if(isset($_POST["searchtext"]))
+        if(isset($_POST["txtInfo"]))
 			{
-				$sql = "SELECT sanpham.SoLuocXem,sanpham.XuatXu,sanpham.MaSanPham, sanpham.TenSanPham, sanpham.GiaSanPham, sanpham.HinhURL, sanpham.SoLuongTon, loaisanpham.TenLoaiSanPham, hangsanxuat.TenHangSanXuat, sanpham.MoTa
+				$sql = "SELECT sanpham.XuatXu,sanpham.SoLuocXem,sanpham.MaSanPham, sanpham.TenSanPham, sanpham.GiaSanPham, sanpham.HinhURL, sanpham.SoLuongTon, loaisanpham.TenLoaiSanPham, hangsanxuat.TenHangSanXuat, sanpham.MoTa
 						FROM sanpham, loaisanpham, hangsanxuat
 						WHERE sanpham.TenSanPham LIKE N'%".$search."%' and sanpham.BiXoa=FALSE
 						GROUP BY sanpham.MaSanPham";

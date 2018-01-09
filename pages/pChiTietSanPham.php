@@ -2,9 +2,9 @@
     if(isset($_GET['id']))
     {
         $maSanPham = $_GET['id'];
-        $sql = "SELECT SanPham.MaSanPham, SanPham.TenSanPham, SanPham.GiaSanPham, SanPham.HinhURL, SanPham.SoLuongTon, LoaiSanPham.TenLoaiSanPham, HangSanXuat.TenHangSanXuat, SanPham.MoTa
-                FROM SanPham, LoaiSanPham, HangSanXuat
-                WHERE SanPham.BiXoa = FALSE AND SanPham.MaSanPham = $maSanPham AND SanPham.MaLoaiSanPham = LoaiSanPham.MaLoaiSanPham AND SanPham.MaHangSanXuat = HangSanXuat.MaHangSanXuat;";
+        $sql = "SELECT sanpham.MaSanPham,sanpham.XuatXu, sanpham.TenSanPham, sanpham.GiaSanPham, sanpham.HinhURL, sanpham.SoLuongTon, loaisanpham.TenLoaiSanPham, hangsanxuat.TenHangSanXuat, sanpham.MoTa,sanpham.SoLuocXem
+                FROM sanpham, loaisanpham, hangsanxuat
+                WHERE sanpham.BiXoa = FALSE AND sanpham.MaSanPham = $maSanPham AND sanpham.MaLoaiSanPham = loaisanpham.MaLoaiSanPham AND sanpham.MaHangSanXuat = hangsanxuat.MaHangSanXuat;";
         $result = DataProvider::ExecuteQuery($sql);
         while($row = mysqli_fetch_array($result))
         {
@@ -15,6 +15,8 @@
             $tenLoaiSanPham = $row["TenLoaiSanPham"];
             $soLuongTon = $row["SoLuongTon"];
             $moTa = $row["MoTa"];
+			$soLuocXem=$row["SoLuocXem"];
+			$xuatXu=$row["XuatXu"];
             include ("templates/tempChiTietSanPham.php");
         }
     }

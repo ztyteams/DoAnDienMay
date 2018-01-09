@@ -1,9 +1,9 @@
-<h2>Sản phẩm mới nhất</h2>
+<h2><img src="img/NEW.png" width="50">SẢN PHẨM MỚI NHẤT</h2>
 <?php
     $sql = "SELECT SanPham.MaSanPham, SanPham.TenSanPham, SanPham.GiaSanPham, SanPham.HinhURL
             FROM SanPham
             ORDER BY SanPham.NgayNhap DESC
-            LIMIT 0, 4";
+            LIMIT 0, 10";
     $result = DataProvider::ExecuteQuery($sql);
     while($row = mysqli_fetch_array($result))
     {
