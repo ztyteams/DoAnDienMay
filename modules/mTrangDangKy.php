@@ -27,7 +27,7 @@
  </div>
    <h1 style="color:#F03;margin:3% 0 0 40%"><i>ĐĂNG KÝ TÀI KHOẢN CHO KHÁCH HÀNG</i></h1></br>  
       <div style=" margin:1% 0 5% 40%; background-color:#09F; width:450px; height:600px">    
-	<form method="post"onsubmit="return KiemTraDangKy()">
+		<form method="post" onsubmit="return KiemTraDangKy()">
         <h2 style="color:#F03; padding:5px 0 0 5px">Thông tin cá nhân:</h2>
     	<div style="margin:0 0 0 15%; width:100%">
     	<p><b>Họ và tên</b></p>
@@ -92,8 +92,8 @@
                 	<input style="width:52%" type ="password" id="txtXacNhanMK" placeholder="Xác nhận mật khẩu của bạn"/>
           <div style="margin:5% 0 0 30%">
                   <a href="./index.php"><input style="width:100px ; height:30px" type="button" value="Quay lại"/></a>   	 
-                  <input style="width:100px ; height:30px" type="submit" value="Đăng ký"/>
-                  </div>
+                  <a href="index.php?a=21"><input style="width:100px ; height:30px" type="submit" value="Đăng ký"/></a>
+           </div>
           </div>
    		</form>
 </div>
