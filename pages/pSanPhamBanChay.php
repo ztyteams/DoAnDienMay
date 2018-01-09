@@ -1,9 +1,9 @@
-<h2><img src="img/HOT.png" width="50">SẢN PHẨM BÁN CHẠY</h2>
+﻿<h2><img src="img/HOT.png" width="50">SẢN PHẨM BÁN CHẠY</h2>
 <?php
-    $sql = "SELECT SanPham.MaSanPham, SanPham.TenSanPham, SanPham.GiaSanPham, SanPham.HinhURL
-            FROM SanPham
-            WHERE SanPham.BiXoa = FALSE
-            ORDER BY SanPham.SoLuongBan DESC
+    $sql = "SELECT sanpham.MaSanPham, sanpham.TenSanPham, sanpham.GiaSanPham, sanpham.HinhURL
+            FROM sanpham
+            WHERE sanpham.BiXoa = FALSE
+            ORDER BY sanpham.SoLuongBan DESC
             LIMIT 0, 10";
     $result = DataProvider::ExecuteQuery($sql);
     while($row = mysqli_fetch_array($result))
