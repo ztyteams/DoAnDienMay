@@ -15,8 +15,8 @@
             $tenLoaiSanPham = $row["TenLoaiSanPham"];
             $soLuongTon = $row["SoLuongTon"];
             $moTa = $row["MoTa"];
-	    $soLuocXem=$row["SoLuocXem"];
-	    $xuatXu=$row["XuatXu"];
+			$soLuocXem=$row["SoLuocXem"];
+			$xuatXu=$row["XuatXu"];
             include ("templates/tempChiTietSanPham.php");
         }
     }
