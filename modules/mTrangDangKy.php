@@ -1,5 +1,29 @@
- 
- 
+  <?php
+ 	include_once('lib/DataProvider.php');
+ 	$tendn = '';
+	$hoten ='';
+	$sdt='';
+	$err='';
+	
+ 	if(isset($_POST['btnkiemtra']))
+	{
+		$tendn = $_POST['txtTenDangNhap'];
+		$hoten =$_POST['txtHoTen'];
+		$sdt=$_POST['txtSDT'];
+		$sql="select TenDangNhap from taikhoan where TenDangNhap='$tendn'";
+		$result = DataProvider::ExecuteQuery($sql);
+		$row = mysqli_fetch_row($result);
+			if($tendn == $row[0])
+			{
+				$err='Tên đăng nhập của bạn đã tồn tại';	
+			}
+			else
+			{
+				$err='Tên đăng nhập có thể sử dụng';	
+			}
+	}
+	
+ ?>
  </div>
    <h1 style="color:#F03;margin:3% 0 0 40%"><i>ĐĂNG KÝ TÀI KHOẢN CHO KHÁCH HÀNG</i></h1></br>  
       <div style=" margin:1% 0 5% 40%; background-color:#09F; width:450px; height:600px">    
@@ -7,64 +31,34 @@
         <h2 style="color:#F03; padding:5px 0 0 5px">Thông tin cá nhân:</h2>
     	<div style="margin:0 0 0 15%; width:100%">
     	<p><b>Họ và tên</b></p>
-            <input style="width:72%" type ="text" id="txtHoTen" placeholder="Nhập họ và tên" />
+            <input style="width:72%" type ="text" id="txtHoTen" name="txtHoTen" placeholder="Nhập họ và tên" value="<?php echo $hoten?>"/>
             <p><b>Ngày/Tháng/Năm</b></p>
          			<select style="width:17%; height:15%" id="CbxNgay">
                      		<option>[Ngày]</option>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
-				 <option>11</option>
-				 <option>13</option>
-				  <option>14</option>
-				  <option>15</option>
-				  <option>16</option>
-				  <option>17</option>
-				   <option>18</option>
-				   <option>19</option>
-				   <option>25</option>
-				   <option>26</option>
-				   <option>27</option>
-				   <option>28</option>
-				   <option>29</option>
-				   <option>30</option>
-				   <option>31</option>
+                            <?php
+								for($i=1;$i<31;$i++)
+								{
+									echo '<option>'.$i.'</option>';	
+								}
+							?>
                 	</select>
                		 <select style="width:32%; height:20%" id="CbxThang">
                      		<option>[Tháng]</option>
-                			<option>Tháng 1</option>
-                   		 	<option>Tháng 2</option>
-                   		 	<option>Tháng 3</option>
-                   		 	<option>Tháng 4</option>
-                   		 	<option>Tháng 5</option>
-                   		 	<option>Tháng 6</option>
-                    		<option>Tháng 7</option>
-                   			<option>Tháng 8</option>
-                   			<option>Tháng 9</option>
-                   		 	<option>Tháng 10</option>
-                   		 	<option>Tháng 11</option>
-                    		<option>Tháng 12 </option>
+                			<?php
+								for($i=1;$i<=12;$i++)
+								{
+									echo '<option>'.$i.'</option>';	
+								}
+							?>
                 	</select>
             		<select style="width:23%; height:20%" id="CbxNam">
                      		<option>[Năm]</option>
-                			<option>1990</option>
-                   		 	<option>1991</option>
-                   		 	<option>1992</option>
-                   		 	<option>1993</option>
-                   		 	<option>1994</option>
-                   		 	<option>1995</option>
-                    			<option>1996</option>
-                   			<option>1997</option>
-                   			<option>1998</option>
-                   		 	<option>1999</option>
-                   		 	<option>2000</option>
+                			<?php
+								for($i=1990;$i<=2000;$i++)
+								{
+									echo '<option>'.$i.'</option>';	
+								}
+							?>
                 	</select>
             	<p><b>Bạn ở đâu</b></p>
                 	<select style="width:73%" id="CbxThanhPho">
@@ -75,20 +69,23 @@
                    		 	<option>Tiền Giang</option>
                    		 	<option>Kiên Giang</option>
                    		 	<option>Bạc Liêu</option>
-                    			<option>Bến Tre</option>
+                    		<option>Bến Tre</option>
                    			<option>Cà Mau</option>
                    			<option>Sóc Trăng</option>
                    		 	<option>Vĩnh Long</option>
                    		 	<option>Hậu Giang</option>
                 	</select>
               	<p><b>Số điện thoại của bạn</b></p>
-                <input style="width:72%" type ="text" id="txtSDT" placeholder="Nhập số điện thoại của bạn" />
+                <input style="width:72%" type ="text" id="txtSDT" name="txtSDT"placeholder="Nhập số điện thoại của bạn" value="<?php echo $sdt?>"/>
             </div>
         	<h2 style="color:#F03; padding:5px 0 0 5px">Thông tin tài khoản:</h2>
             <div style="margin:0 0 0 15%; width:100%">
             	<p><b>Tên đăng nhập</b></p>
-                <input style="width:52%" type="text" id="txtTenDangNhap"/>  
-                <input style="width:20%" type="button" onclick="KiemTra()" value="Kiểm tra"/>
+                <input style="width:52%" type="text" id="txtTenDangNhap" name="txtTenDangNhap" value="<?php echo $tendn?>"/>  
+                <input style="width:20%" type="submit" name="btnkiemtra" value="Kiểm tra"/>
+                <?php
+					echo '<h4>'.$err.'</h4>';
+				?>
                  <p><b>Mật khẩu</b></p>
                   <input style="width:52%" id="txtMatKhau" type="password"/>
                   <p><b>Xác nhận mật khẩu</b></p>
@@ -100,17 +97,6 @@
           </div>
    		</form>
 </div>
-<script type="text/javascript" language="javascript">
-		function KiemTra()
-		{
-			var tenDN = document.getElementById('txtTenDangNhap');
-				if(tenDN.value == "")
-				{
-					tenDN.focus();
-					alert("Tên đăng nhập không được rỗng");
-				}
-		}
-</script>
 <script type="text/javascript" language="javascript">
 	function KiemTraDangKy()
 		{
