@@ -1,15 +1,15 @@
 /* CSS Document */
 body{
-	font-family: tahoma, helvetica, arial, sans-serif; 	/* font chữ */
-	font-size: 12px; 									/* cở chữ */
-	background:url(../img/page_bg.gif);					/* ảnh nền của toàn website */
+	font-family: tahoma, helvetica, arial, sans-serif; 
+	font-size: 12px; 								
+	background:url(../img/page_bg.gif);
 	margin:0px;
 	padding:0px;
 }
 #wrapper{
-	margin:auto;		/* sét khoản cách lề tự động để canh giữa trang */
+	margin:auto;	
 	text-align:left;
-	width:1000px;		/* canh chiều ngang của nội dung trang web */
+	width:1000px;
 	border-left: 2px solid #FFF;
 	border-right: 2px solid #FFF;
 	margin-bottom: 10px;
@@ -49,16 +49,15 @@ body{
 	color:#FFF;
 	font-weight:bold;
 	text-decoration:none;
-	position:absolute;			/* set vị trí tuyệt đối cho khung login_nav */
+	position:absolute;			
 	width:520px;
 	margin-left:295px;
-	margin-top: -40px;			/* điều khiển dịch lên trên so với vị trí hiện tại */
+	margin-top: -40px;			
 	text-align:right;
 }
 
 a{
-	text-decoration: none;		/* bỏ gạch chân cho link */
-}
+	text-decoration: none;		
 
 #sidebar dl dt{
 	background-color:#4dd2ff;
@@ -107,12 +106,12 @@ a{
 	text-align:center;
 }
 
-.box:nth-child(even){					/* định dạng cho các block chẵn */
+.box:nth-child(even){					
 	border-top: 5px solid rgb(156, 211, 165);
 	margin-right: 15px;
 }
 
-.box:nth-child(odd){					/* định dạng cho các block lẻ */
+.box:nth-child(odd){					
 	border-top: 5px solid rgb(119, 184, 219);
 	margin-left: 15px;
 } 
