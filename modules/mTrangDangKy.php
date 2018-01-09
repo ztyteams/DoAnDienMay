@@ -1,42 +1,41 @@
  
  
  </div>
-			<h1 style="color:#F03;margin:3% 0 0 40%"><i>ĐĂNG KÝ TÀI KHOẢN CHO KHÁCH HÀNG</i></h1></br>
-    
-		<div style=" margin:1% 0 5% 40%; background-color:#09F; width:450px; height:600px">    
-		<form method="post"onsubmit="return KiemTraDangKy()">
+   <h1 style="color:#F03;margin:3% 0 0 40%"><i>ĐĂNG KÝ TÀI KHOẢN CHO KHÁCH HÀNG</i></h1></br>  
+      <div style=" margin:1% 0 5% 40%; background-color:#09F; width:450px; height:600px">    
+	<form method="post"onsubmit="return KiemTraDangKy()">
         <h2 style="color:#F03; padding:5px 0 0 5px">Thông tin cá nhân:</h2>
     	<div style="margin:0 0 0 15%; width:100%">
     	<p><b>Họ và tên</b></p>
-        	<input style="width:72%" type ="text" id="txtHoTen" placeholder="Nhập họ và tên" />
+            <input style="width:72%" type ="text" id="txtHoTen" placeholder="Nhập họ và tên" />
             <p><b>Ngày/Tháng/Năm</b></p>
          			<select style="width:17%; height:15%" id="CbxNgay">
                      		<option>[Ngày]</option>
-                			<option>1</option>
-                   		 	<option>2</option>
-                   		 	<option>3</option>
-                   		 	<option>4</option>
-                   		 	<option>5</option>
-                   		 	<option>6</option>
-                    		<option>7</option>
-                   			<option>8</option>
-                   			<option>9</option>
-                   		 	<option>10</option>
-                   		 	<option>11</option>
-                    		<option>13</option>
-                            <option>14</option>
-                            <option>15</option>
-                            <option>16</option>
-                            <option>17</option>
-                            <option>18</option>
-                            <option>19</option>
-                            <option>25</option>
-                            <option>26</option>
-                            <option>27</option>
-                            <option>28</option>
-                            <option>29</option>
-                            <option>30</option>
-                            <option>31</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+				 <option>11</option>
+				 <option>13</option>
+				  <option>14</option>
+				  <option>15</option>
+				  <option>16</option>
+				  <option>17</option>
+				   <option>18</option>
+				   <option>19</option>
+				   <option>25</option>
+				   <option>26</option>
+				   <option>27</option>
+				   <option>28</option>
+				   <option>29</option>
+				   <option>30</option>
+				   <option>31</option>
                 	</select>
                		 <select style="width:32%; height:20%" id="CbxThang">
                      		<option>[Tháng]</option>
@@ -61,7 +60,7 @@
                    		 	<option>1993</option>
                    		 	<option>1994</option>
                    		 	<option>1995</option>
-                    		<option>1996</option>
+                    			<option>1996</option>
                    			<option>1997</option>
                    			<option>1998</option>
                    		 	<option>1999</option>
@@ -76,7 +75,7 @@
                    		 	<option>Tiền Giang</option>
                    		 	<option>Kiên Giang</option>
                    		 	<option>Bạc Liêu</option>
-                    		<option>Bến Tre</option>
+                    			<option>Bến Tre</option>
                    			<option>Cà Mau</option>
                    			<option>Sóc Trăng</option>
                    		 	<option>Vĩnh Long</option>
