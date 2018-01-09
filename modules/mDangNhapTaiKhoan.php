@@ -27,9 +27,4 @@
 
         return true;
     }
-	
-	function ChuyenTrangDangKy()
-	{
-		window.location = 'modules/mTrangDangKy.php';
-	}
 </script>
