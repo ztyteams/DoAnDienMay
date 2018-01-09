@@ -1,13 +1,13 @@
 /* CSS Document */
 body{
-	font-family: tahoma, helvetica, arial, sans-serif; 
-	font-size: 12px; 								
-	background:url(../img/page_bg.gif);
+	font-family: tahoma, helvetica, arial, sans-serif;
+	font-size: 12px; 									
+	background:url(../img/page_bg.gif);	
 	margin:0px;
 	padding:0px;
 }
 #wrapper{
-	margin:auto;	
+	margin:auto;
 	text-align:left;
 	width:1000px;
 	border-left: 2px solid #FFF;
@@ -49,15 +49,16 @@ body{
 	color:#FFF;
 	font-weight:bold;
 	text-decoration:none;
-	position:absolute;			
+	position:absolute;	
 	width:520px;
 	margin-left:295px;
-	margin-top: -40px;			
+	margin-top: -40px;
 	text-align:right;
 }
 
 a{
-	text-decoration: none;		
+	text-decoration: none;
+}
 
 #sidebar dl dt{
 	background-color:#4dd2ff;
@@ -106,12 +107,12 @@ a{
 	text-align:center;
 }
 
-.box:nth-child(even){					
+.box:nth-child(even){				
 	border-top: 5px solid rgb(156, 211, 165);
 	margin-right: 15px;
 }
 
-.box:nth-child(odd){					
+.box:nth-child(odd){	
 	border-top: 5px solid rgb(119, 184, 219);
 	margin-left: 15px;
 } 
@@ -151,6 +152,18 @@ a{
 	float: left;
 	margin:auto;
 	background-color:#006699;
+}
+.frmAdv1{
+	font-weight:bold;
+	padding:5px;
+	margin: 5px 5px;
+	font-size:14px;
+}
+.label3{
+	font-weight:bold;
+	display:inline-block;
+	margin: 5px 5px;
+	padding: 5px;
 }
 #chitietsp
 {
