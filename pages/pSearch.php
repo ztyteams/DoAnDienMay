@@ -13,10 +13,10 @@
 		{
         if(isset($_POST["searchtext"]))
 			{
-				$sql = "SELECT SanPham.MaSanPham, SanPham.TenSanPham, SanPham.GiaSanPham, SanPham.HinhURL, SanPham.SoLuongTon, LoaiSanPham.TenLoaiSanPham, HangSanXuat.TenHangSanXuat, SanPham.MoTa
-						FROM SanPham, LoaiSanPham, HangSanXuat
-						WHERE SanPham.TenSanPham LIKE N'%".$search."%' and SanPham.BiXoa=FALSE
-						GROUP BY SanPham.MaSanPham";
+				$sql = "SELECT sanpham.SoLuocXem,sanpham.XuatXu,sanpham.MaSanPham, sanpham.TenSanPham, sanpham.GiaSanPham, sanpham.HinhURL, sanpham.SoLuongTon, loaisanpham.TenLoaiSanPham, hangsanxuat.TenHangSanXuat, sanpham.MoTa
+						FROM sanpham, loaisanpham, hangsanxuat
+						WHERE sanpham.TenSanPham LIKE N'%".$search."%' and sanpham.BiXoa=FALSE
+						GROUP BY sanpham.MaSanPham";
 				$result = DataProvider::ExecuteQuery($sql);
 				while($row = mysqli_fetch_array($result))
 				{
@@ -28,6 +28,8 @@
 					$soLuongTon = $row["SoLuongTon"];
 					$maSanPham =$row["MaSanPham"];
 					$moTa = $row["MoTa"];
+					$soLuocXem= $row["SoLuocXem"];
+					$xuatXu=$row["XuatXu"];
 					include ("templates/tempThumbProduct.php");
 				}
 			}
