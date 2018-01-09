@@ -1,4 +1,6 @@
-</div>
+ 
+ 
+ </div>
 			<h1 style="color:#F03;margin:3% 0 0 40%"><i>ĐĂNG KÝ TÀI KHOẢN CHO KHÁCH HÀNG</i></h1></br>
     
 		<div style=" margin:1% 0 5% 40%; background-color:#09F; width:450px; height:600px">    
@@ -89,15 +91,9 @@
                 <input style="width:52%" type="text" id="txtTenDangNhap"/>  
                 <input style="width:20%" type="button" onclick="KiemTra()" value="Kiểm tra"/>
                  <p><b>Mật khẩu</b></p>
-<<<<<<< HEAD
-                	<input style="width:52%" type ="password"/>
-                  <p><b>Xác nhận mật khẩu</b></p>
-                	<input style="width:52%" type ="password" placeholder="Xác nhận mật khẩu của bạn"/>
-=======
-                	<input style="width:52%" id="txtMatKhau" type="password"/>
+                  <input style="width:52%" id="txtMatKhau" type="password"/>
                   <p><b>Xác nhận mật khẩu</b></p>
                 	<input style="width:52%" type ="password" id="txtXacNhanMK" placeholder="Xác nhận mật khẩu của bạn"/>
->>>>>>> 84171ddc4785f50736c6aab1f64dc2f8df5ab56e
           <div style="margin:5% 0 0 30%">
                   <a href="./index.php"><input style="width:100px ; height:30px" type="button" value="Quay lại"/></a>   	 
                   <input style="width:100px ; height:30px" type="submit" value="Đăng ký"/>
