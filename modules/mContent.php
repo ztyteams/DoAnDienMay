@@ -51,6 +51,9 @@
 		case 20:
 			include ("pages/pSearchGia.php");
 			break;
+		case 21:
+			include ("pages/pdangky.php");
+			break;
         default:
             include "pages/pError.php";
             break;
