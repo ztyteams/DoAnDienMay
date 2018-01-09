@@ -33,9 +33,9 @@
 		case 14:
             include ("modules/mTrangDangKy.php");
             break;
-		case 15:
-			include ("pages/pSearch.php");
-			break;
+	case 15:
+	    include ("pages/pSearch.php");
+	    break;
         default:
             include "pages/pError.php";
             break;
