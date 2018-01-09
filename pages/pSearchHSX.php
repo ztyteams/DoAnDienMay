@@ -2,7 +2,11 @@
 	include("modules/mSearchAdv.php");
 ?>
 <div>
-	<?php $search =$_POST["txtInfo"];?> 
+	<?php  if(isset($_POST["txtInfo"]))
+				$search =$_POST["txtInfo"];
+			else
+				$search="";
+	?>
 	<span class="label2">Kết quả tìm kiếm theo hãng sản xuất: "<b style="font-size: 18px;color: #ff1a1a"><?php echo $search; ?></b>" </span>
 </div>	
 <?php

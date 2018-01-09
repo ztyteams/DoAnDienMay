@@ -2,15 +2,22 @@
 	include("modules/mSearchAdv.php");
 ?>
 <div>
-	<?php  if(isset($_POST["txtInfo"]))
+	<?php  if(isset($_POST["txtInfo"])&& isset($_POST["txtMinPrice"]) && isset($_POST["txtMaxPrice"]))
+			{			
 				$search =$_POST["txtInfo"];
-			else
+				$min=$_POST["txtMinPrice"];
+				$max=$_POST["txtMaxPrice"];
+			}
+			else{
 				$search="";
+				$min=0;
+				$max=0;
+			}
 	?> 
 	<span class="label2">Kết quả tìm kiếm theo giá sản phẩm: "<b style="font-size: 18px;color: #ff1a1a"><?php echo $search; ?></b>" </span>
 </div>	
 <?php
-		if($search=="" or $search==" ")
+		if($search==" ")
 		{
 ?>
 			<b style="color: red;font-size: 32px"><?php echo "Không có thông tin từ sản phẩm.... :("; ?></b>
@@ -18,11 +25,12 @@
 		}
 		else
 		{
-        if(isset($_POST["txtInfo"]))
+        if(isset($_POST["txtInfo"])&& isset($_POST["txtMinPrice"]) && isset($_POST["txtMaxPrice"]))
 			{
-				$sql = "Select sanpham.maSP,sanpham.tenSP,sanpham.giaSP,sanpham.HinhURL,sanpham.SoLuocXem
+				$sql = "Select sanpham.maSP,sanpham.tenSP,sanpham.giaSP,sanpham.HinhURL,sanpham.SoLuocXem,sanpham.XuatXu
 						FROM sanpham
-						Where sanpham.BiXoa=Flase and (sanpham.giaSP BETWEEN 500000 and 10000000)";
+						Where sanpham.BiXoa=Flase and (sanpham.giaSP BETWEEN ".$min." and ".$max.") and sanpham.TenSanPham=N'%".$search."%'
+						GROUP BY sanpham.MaSanPham";
 				$result = DataProvider::ExecuteQuery($sql);
 				while($row = mysqli_fetch_array($result))
 				{
