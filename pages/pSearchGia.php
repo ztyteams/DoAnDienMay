@@ -28,7 +28,7 @@
         if(isset($_POST["txtInfo"])&& isset($_POST["txtMinPrice"]) && isset($_POST["txtMaxPrice"]))
 			{
 				$sql = "Select sanpham.maSP,sanpham.tenSP,sanpham.giaSP,sanpham.HinhURL,sanpham.SoLuocXem,sanpham.XuatXu
-						FROM sanpham
+						FROM sanpham,loaisanpham,hangxanxuat
 						Where sanpham.BiXoa=Flase and (sanpham.giaSP BETWEEN ".$min." and ".$max.") and sanpham.TenSanPham=N'%".$search."%'
 						GROUP BY sanpham.MaSanPham";
 				$result = DataProvider::ExecuteQuery($sql);
