@@ -231,7 +231,8 @@ CREATE TABLE IF NOT EXISTS `taikhoan` (
 
 INSERT INTO `taikhoan` (`MaTaiKhoan`, `TenDangNhap`, `MatKhau`, `TenHienThi`, `DiaChi`, `DienThoai`, `Email`, `BiXoa`, `MaLoaiTaiKhoan`) VALUES
 (1, 'nhut', '123456', 'Minh Nhựt', '227 - Nguyễn Văn Cừ - Q.5', '01234567890', 'nhuttran97tphcm@gmail.com', 0, 1),
-(5, 'admin', 'admin', 'Admin', 'Zty Shop', '01655068022', 'admin@ztyshop.vn', 0, 2);
+(5, 'admin', 'admin', 'Admin', 'Zty Shop', '01655068022', 'admin@ztyshop.vn', 0, 2),
+(2, 'phong', '123456', 'phong', 'Zty Shop', '01655066722', 'thanhphong@gmail.vn', 0, 1);
 
 -- --------------------------------------------------------
 
