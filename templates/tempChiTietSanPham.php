@@ -1,4 +1,7 @@
 <div id="chitietsp">
+<?php
+	include "pages/exSoLuocXem.php";
+?>
     <div id="chitietleft">
         <img src="images/<?php echo $hinhURL; ?>">
     </div>
