@@ -31,6 +31,9 @@
 					$soLuongTon = $row["SoLuongTon"];
 					$maSanPham =$row["MaSanPham"];
 					$moTa = $row["MoTa"];
+					
+					$soLuocXem= $row["SoLuocXem"];
+					$xuatXu=$row["XuatXu"];
 					include ("templates/tempThumbProduct.php");
 				}
 			}
